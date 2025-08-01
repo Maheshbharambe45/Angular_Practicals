@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script>
+    angular.module('app', [])
+      .controller('ctrl', function($scope) {
+        $scope.name = "Mahesh";
+      });
+  </script>
+</head>
+<body ng-controller="ctrl">
+  Hello {{name}}
+</body>
+</html>

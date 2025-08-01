@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script>
+    angular.module('app', []).controller('ctrl', $scope => {
+      $scope.today = new Date();
+    });
+  </script>
+</head>
+<body ng-controller="ctrl">
+
+  <p>{{ today | date }}</p>
+  <p>{{ today | date:'fullDate' }}</p>
+  <p>{{ today | date:'shortDate' }}</p>
+  <p>{{ today | date:'mediumDate' }}</p>
+  <p>{{ today | date:'longDate' }}</p>
+  <p>{{ today | date:'dd/MM/yyyy' }}</p>
+  <p>{{ today | date:'MM-dd-yyyy' }}</p>
+  <p>{{ today | date:'yyyy/MM/dd' }}</p>
+  <p>{{ today | date:'hh:mm:ss a' }}</p>
+  <p>{{ today | date:'dd/MM/yyyy hh:mm a' }}</p>
+
+</body>
+</html>

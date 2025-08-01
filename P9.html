@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-init>
+
+  <input type="number" ng-model="a">  
+  <input type="number" ng-model="b"><br><br>
+
+  <button ng-click="result = a + b">Add</button>
+  <button ng-click="result = a - b">Subtract</button>
+  <button ng-click="result = a * b">Multiply</button>
+  <button ng-click="result = a / b">Divide</button>
+
+  <p>Result: {{result}}</p>
+
+</body>
+</html>

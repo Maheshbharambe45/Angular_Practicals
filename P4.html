@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-init="name='mahesh'; amount=1500; today=Date(); items=['pen','pencil','scale']">
+
+  <p>Uppercase: {{name | uppercase}}</p>
+  <p>Lowercase: {{name | lowercase}}</p>
+  <p>Currency: {{amount | currency}}</p>
+  <p>Date: {{today | date:'dd/MM/yyyy'}}</p>
+  <p>Filter 'pen': {{items | filter:'pen'}}</p>
+
+</body>
+</html>
